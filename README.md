@@ -129,8 +129,8 @@ var DIM = Math.min(WIDTH, HEIGHT)
 var M = DIM / DEFAULT_SIZE
 
 function setup() {
-createCanvas(WIDTH, HEIGHT)
-rect(100*M, 500*M, 50*M, 50*M)
+     createCanvas(WIDTH, HEIGHT)
+     rect(100*M, 500*M, 50*M, 50*M)
 }
 ```
 
