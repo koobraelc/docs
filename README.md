@@ -122,16 +122,16 @@ The output must be dimension agnostic. Meaning it scales seamlessly to any dimen
 A simple way to account for this is to define a default dimension and create a multiplier to scale coordinates or sizes relative to the canvas dimensions. I'll use p5.js as an example but the same principle applies regardless of the language.
 
 ```javascript
- var DEFAULT_SIZE = 1000
- var WIDTH = window.innerWidth
- var HEIGHT = window.innerHeight
- var DIM = Math.min(WIDTH, HEIGHT)
- var M = DIM / DEFAULT_SIZE
- 
- function setup() {
- 	createCanvas(WIDTH, HEIGHT)
-  rect(100*M, 500*M, 50*M, 50*M)
- }
+var DEFAULT_SIZE = 1000
+var WIDTH = window.innerWidth
+var HEIGHT = window.innerHeight
+var DIM = Math.min(WIDTH, HEIGHT)
+var M = DIM / DEFAULT_SIZE
+
+function setup() {
+createCanvas(WIDTH, HEIGHT)
+rect(100*M, 500*M, 50*M, 50*M)
+}
 ```
 
 ### Cost
